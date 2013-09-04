@@ -1,0 +1,24 @@
+<phpunit bootstrap="./bootstrap.php" verbose="true" colors="true" debug="true">
+	<php>
+		<env name="APPLICATION_ENV" value="testing"/>
+	</php>
+	<testsuite name="application">
+		<directory>./application/</directory>
+		<directory>./library/</directory>
+	</testsuite>
+	
+	<filter>
+		<whitelist>
+			<directory suffix=".php">../htdocs/application/</directory>
+			<directory suffix=".php">../htdocs/library/</directory>
+			<exclude>
+				<directory suffix=".phtml">../application/</directory>
+			</exclude>
+		</whitelist>
+	</filter>
+<!--
+	<logging>
+		<log type="coverage-html" target="../htdocs/public/coverage/html" charset="UTF-8"/>
+	</logging>
+-->
+</phpunit>
