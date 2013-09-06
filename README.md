@@ -10,7 +10,7 @@ ZendFramework 1.
 System Requirements
 -------------------
 * PHP 5.3 or higher
-* PHPUnit 3.5
+* PHPUnit 3.5 or higher
 * ZendFramework-1.x
 
 Installation
